@@ -8,8 +8,8 @@ const config = {
 }
 
 SUB && Object.assign(config, {
-  outputDir: 'dist/main',
-  publicPath: 'dist/main',
+  outputDir: '../dist/main',
+  publicPath: '/main',
 })
 
 module.exports = config

@@ -16,7 +16,7 @@ const config = {
 }
 
 SUB && Object.assign(config, {
-  outputDir: '../qiankun-base/dist/subs/vue',
+  outputDir: '../dist/subs/vue',
   publicPath: '/subs/vue',
 })
 
