@@ -1,0 +1,5 @@
+<div>
+  <app-todo-list-input (todoListInputEventEmitter)="todoListInputEventEmitter($event)"></app-todo-list-input>
+
+  <app-todo-list-item *ngFor="let i of oArrTodoListData" [itemData]="i"></app-todo-list-item>
+</div>

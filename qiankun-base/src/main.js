@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import 'zone.js'
 import { registerMicroApps, start } from 'qiankun'
 
 Vue.config.productionTip = false
@@ -22,6 +23,12 @@ const apps = [
     entry: isProd ? '/subs/react/' : 'http://localhost:9000',
     container: '#react',
     activeRule: '/react'
+  },
+  {
+    name: 'angularApp',
+    entry: isProd ? '/subs/angular/' : 'http://localhost:9000',
+    container: '#angular',
+    activeRule: '/angular'
   }
 ]
 
