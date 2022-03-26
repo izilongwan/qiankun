@@ -1,5 +1,3 @@
-<p class="link-wrap">
-  <a routerLink="/first">First</a>|
-  <a routerLink="/second">Second</a>|
-  <a [routerLink]="['second', 1]">SecondId</a>
-</p>
+<nav class="nav-wrap">
+  <a class="nav-wrap_link-item" *ngFor="let link of routes;" [routerLink]="link.path">{{link.text}}</a>
+</nav>

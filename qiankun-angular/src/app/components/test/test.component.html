@@ -1,3 +1,13 @@
-<p>
-  test works!
-</p>
+<div class="test-wrap">
+  <ul class="test-wrap_list" *ngIf="data?.length; else loading">
+    <li class="test-wrap_list_item" *ngFor="let item of data; index as index;">
+      {{item?.[0]}} --> {{item?.[1]}}
+    </li>
+  </ul>
+
+  <ng-template #loading>
+    <div>this is ignored</div>
+  </ng-template>
+</div>
+
+<button (click)="handleChange($event)" [disabled]="disabled">{{btnText}}</button>

@@ -8,7 +8,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-(<{ hot?: { accept?: Function } }> module)?.hot?.accept?.()
+// (<{ hot?: { accept?: Function } }> module)?.hot?.accept?.()
 
 let app: void | NgModuleRef<AppModule>;
 
@@ -30,5 +30,5 @@ export async function mount(props: Object) {
 }
 
 export async function unmount(props: Object) {
-  (<any>app).destroy();
+  (<NgModuleRef<AppModule>>app).destroy();
 }

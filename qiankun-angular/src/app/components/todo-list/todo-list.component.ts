@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Directive, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-todo-list',

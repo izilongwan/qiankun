@@ -1,3 +1,6 @@
-.link-wrap {
-  // margin-top: 100px;
+.nav-wrap {
+  &_link-item {
+    margin: 0 10px;
+    text-decoration: none;
+  }
 }

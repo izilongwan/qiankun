@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TestInfoService } from 'src/app/service/test-info.service';
+import { ICommonObject } from 'src/app/typings';
 
 @Component({
   selector: 'app-second',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./second.component.scss']
 })
 export class SecondComponent implements OnInit {
+  info:ICommonObject = {}
 
-  constructor() { }
+  constructor(private testInfoService: TestInfoService) { }
 
   ngOnInit() {
+    this.testInfoService.on(info => {
+      this.info = info
+    })
   }
-
 }

@@ -14,8 +14,8 @@ module.exports = {
   output: {
     library: `angularApp`,
     libraryTarget: 'umd',
-    ...SUB && {
+    ...(SUB && {
       path: resolve(__dirname, '../dist/subs/angular'),
-    },
+    })
   },
 };
