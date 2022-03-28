@@ -14,7 +14,15 @@ reviewer: 0
 type: "b"
 uuid: "484cf2b5-e276-4b8a-9c0e-0a718d10e40b"
 -->
-<p>{{info?.['form-who']}}</p>
-<p>{{info?.['creator']}}</p>
-<p>{{info?.['creator_uid']}}</p>
-<p>{{info?.['commit_from']}}</p>
+<p>
+  <d-status type="waiting">{{info?.['from']}}</d-status>
+</p>
+<p>
+  <d-status type="waiting">{{info?.['creator']}}</d-status>
+</p>
+<p>
+  <d-status type="waiting">{{info?.['creator_uid']}}</d-status>
+</p>
+<p>
+  <d-status type="waiting">{{info?.['commit_from']}}</d-status>
+</p>

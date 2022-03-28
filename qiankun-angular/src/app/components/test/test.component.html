@@ -1,13 +1,35 @@
-<div class="test-wrap">
-  <ul class="test-wrap_list" *ngIf="data?.length; else loading">
-    <li class="test-wrap_list_item" *ngFor="let item of data; index as index;">
-      {{item?.[0]}} --> {{item?.[1]}}
-    </li>
-  </ul>
+<div class="test-wrap" #testWrap>
+  <d-panel [type]="'primary'" #panel [isCollapsed]="isCollapsed" [beforeToggle]="beforeToggle"
+    *ngIf="data?.length; else load">
 
-  <ng-template #loading>
+    <d-panel-header>
+      <em class="icon icon-select-arrow" [ngClass]="{ open: panel.isCollapsed }"></em>
+      Panel with foldable
+    </d-panel-header>
+
+    <d-panel-body *ngFor="let item of data; index as index;" class="d-panel-body">
+      <span class="tag-wrap">
+        <d-tag mode="checkable" [(checked)]="item[2]" labelStyle="pink-w98" [tag]="item?.[0] ?? ''">
+        </d-tag>
+      </span>
+
+      <span [class]="item?.[2] ? 'line-t' : ''">{{item?.[1]}}</span>
+    </d-panel-body>
+  </d-panel>
+
+  <ng-template #load>
     <div>this is ignored</div>
   </ng-template>
 </div>
 
-<button (click)="handleChange($event)" [disabled]="disabled">{{btnText}}</button>
+<d-button class="btn" [showLoading]="disabled" [loadingTemplateRef]="loadingTemplateRef2" (click)="handleChange($event)"
+  [disabled]="disabled">{{btnText}}
+</d-button>
+
+<ng-template #loadingTemplateRef>
+  <app-tpl-loading></app-tpl-loading>
+</ng-template>
+
+<ng-template #loadingTemplateRef2>
+  <app-tpl2-loading></app-tpl2-loading>
+</ng-template>

@@ -141,6 +141,15 @@
   dependencies:
     tslib "^2.3.0"
 
+"@angular/cdk@^13.0.0":
+  version "13.3.1"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-13.3.1.tgz#a0feed1ed08690691c2d443c879a50284cb3f19a"
+  integrity sha512-JUCvhN6XomY5JOMH7Qyj/JodAuAtKgLlJYKs0tPmjCkGcBdR/T3/hOJ9gSRhz8PCOoiEORj+3xCh547oJRyesA==
+  dependencies:
+    tslib "^2.3.0"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@~13.0.3":
   version "13.0.3"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-13.0.3.tgz#7d357a80dc612421115b1288291ce6278720d0a4"
@@ -1203,6 +1212,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@devui-design/icons@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@devui-design/icons/-/icons-1.3.0.tgz#5a3006a31ee4f62e3f9837b68c031898ff148b88"
+  integrity sha512-eg9PcDXYn1BaUCo6qP7dszFJ4uRycxASLdKzpz27AW34HbHx4kFce36Fhfr2niRjGKYllcMgYe7hgP5KYVOZ8Q==
+
 "@discoveryjs/json-ext@0.5.5":
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.5.tgz#9283c9ce5b289a3c4f61c12757469e59377f81f3"
@@ -1319,6 +1333,11 @@
     "@npmcli/promise-spawn" "^1.3.2"
     node-gyp "^8.2.0"
     read-package-json-fast "^2.0.1"
+
+"@popperjs/core@^2.5.4":
+  version "2.11.4"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.4.tgz#d8c7b8db9226d2d7664553a0741ad7d0397ee503"
+  integrity sha512-q/ytXxO5NKvyT37pmisQAItCFqA7FD/vNb8dgaJy3/630Fsc+Mz9/9f2SziBoIZ30TJooXyTwZmhi1zjXmObYg==
 
 "@schematics/angular@13.0.3":
   version "13.0.3"
@@ -1853,7 +1872,7 @@ babel-plugin-polyfill-regenerator@^0.2.2:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.2.4"
 
-balanced-match@^1.0.0:
+balanced-match@^1.0.0, balanced-match@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
@@ -2406,6 +2425,14 @@ css-select@^4.1.3:
     domutils "^2.6.0"
     nth-check "^2.0.0"
 
+css-vars-ponyfill@^2.3.2:
+  version "2.4.7"
+  resolved "https://registry.yarnpkg.com/css-vars-ponyfill/-/css-vars-ponyfill-2.4.7.tgz#df6fb2928e5ff013eb67e968761f8ed3d440b1e3"
+  integrity sha512-KhG3AbiZrUpIvAQ9Oc/iBqCitmXg6MajFqNRQd9nHvlwOo8p54HTq5DFCIaAUwMGRyttJ+mBmZCRSHJpe6J9cg==
+  dependencies:
+    balanced-match "^1.0.2"
+    get-css-data "^2.0.2"
+
 css-what@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-5.1.0.tgz#3f7b707aadf633baf62c2ceb8579b545bb40f7fe"
@@ -2439,6 +2466,11 @@ custom-event@~1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/custom-event/-/custom-event-1.0.1.tgz#5d02a46850adf1b4a317946a3928fccb5bfd0425"
   integrity sha1-XQKkaFCt8bSjF5RqOSj8y1v9BCU=
+
+date-fns@^2.20.0:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 date-format@^2.1.0:
   version "2.1.0"
@@ -2699,6 +2731,11 @@ enhanced-resolve@^5.8.3:
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
+
+enquire.js@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/enquire.js/-/enquire.js-2.1.6.tgz#3e8780c9b8b835084c3f60e166dbc3c2a3c89814"
+  integrity sha1-PoeAybi4NQhMP2DhZtvDwqPImBQ=
 
 ent@~2.2.0:
   version "2.2.0"
@@ -3150,6 +3187,11 @@ get-caller-file@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
+
+get-css-data@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/get-css-data/-/get-css-data-2.0.2.tgz#5a24784f155944021b6f3fff304c15bcfcebdb9e"
+  integrity sha512-pYqg80/7u/MdBrrAQj2OIoZ08TxEnvCHyU5WFnPxxS/D0S8OpUTkqGFRzn8bO38DmtCuYBpR9VMCen78BL4jiQ==
 
 get-intrinsic@^1.0.2:
   version "1.1.1"
@@ -3988,6 +4030,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash-es@^4.17.11:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -4299,6 +4346,19 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
+
+ng-devui@^13.0.1:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/ng-devui/-/ng-devui-13.0.1.tgz#1a6c47e5a7ca545504483871ad1a2e7a3d896df3"
+  integrity sha512-dUlI2HUu2dP3bPayENy1AS5TTo5OldjsjVJ73VXVOoPKqDEEEtHuV4Jv6XmLjyq4XaLVmtuZuL+houtfHCwkng==
+  dependencies:
+    "@angular/cdk" "^13.0.0"
+    "@popperjs/core" "^2.5.4"
+    css-vars-ponyfill "^2.3.2"
+    date-fns "^2.20.0"
+    enquire.js "^2.1.6"
+    lodash-es "^4.17.11"
+    tslib "^2.0.0"
 
 nice-napi@^1.0.2:
   version "1.0.2"
@@ -4676,6 +4736,11 @@ parse5-sax-parser@^6.0.1:
   integrity sha512-kXX+5S81lgESA0LsDuGjAlBybImAChYRMT+/uKCEXFBFOeEhS52qUCydGhU3qLRD8D9DVjaUo821WK7DM4iCeg==
   dependencies:
     parse5 "^6.0.1"
+
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
 
 parse5@^6.0.1:
   version "6.0.1"

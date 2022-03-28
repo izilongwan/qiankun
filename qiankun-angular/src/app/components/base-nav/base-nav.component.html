@@ -1,3 +1,5 @@
 <nav class="nav-wrap">
-  <a class="nav-wrap_link-item" *ngFor="let link of routes;" [routerLink]="link.path">{{link.text}}</a>
+  <a class="nav-wrap_link-item" *ngFor="let link of routes; let index = index; let count = count;"
+    [routerLink]="link.path">| {{link.text}} |
+  </a>
 </nav>

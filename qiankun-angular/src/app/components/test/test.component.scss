@@ -1,0 +1,32 @@
+.test-wrap {
+
+  ::ng-deep {
+    .devui-panel-body {
+      flex-direction: column;
+
+      .d-panel-body {
+        padding: 10px;
+      }
+    }
+  }
+
+  .tag-wrap {
+    width: 100px;
+    display: inline-block;
+  }
+
+  .line-t {
+    text-decoration: line-through;
+  }
+}
+
+.btn {
+  margin-top: 10px;
+
+  ::ng-deep {
+    .devui-loading-wrapper {
+      margin-left: 10px;
+      line-height: 10px;
+    }
+  }
+}
