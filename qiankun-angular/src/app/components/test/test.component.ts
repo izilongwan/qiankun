@@ -1,5 +1,5 @@
 import { Component, OnInit, SimpleChanges, TemplateRef, ViewChild } from '@angular/core';
-import { loading } from 'src/app/decorators';
+import { Loading } from 'src/app/decorators';
 import { LoadingService } from 'ng-devui/loading';
 import { EventService } from 'src/app/service/event.service';
 import { HttpService } from 'src/app/service/http.service';
@@ -49,7 +49,7 @@ export class TestComponent implements OnInit {
     return true
   };
 
-  @loading()
+  @Loading()
   async handleChange(e: Event) {
     await this.getRandomText()
   }

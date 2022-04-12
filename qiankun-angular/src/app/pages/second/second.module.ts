@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { DevUIModule } from 'ng-devui';
+import { BasicComponent } from 'src/app/components/basic/basic.component';
 import { TodoListInputComponent } from 'src/app/components/todo-list/todo-list-input/todo-list-input.component';
 import { TodoListItemComponent } from 'src/app/components/todo-list/todo-list-item/todo-list-item.component';
 import { TodoListComponent } from 'src/app/components/todo-list/todo-list.component';
@@ -18,6 +19,7 @@ import { SecondComponent } from './second.component';
     TodoListComponent,
     TodoListInputComponent,
     TodoListItemComponent,
+    BasicComponent
   ]
 })
 export class SecondModule { }

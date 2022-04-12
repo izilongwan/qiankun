@@ -1,6 +1,6 @@
 import { LoadingService } from 'ng-devui/loading';
 
-export function loading() {
+export function Loading() {
   return (target: Object, key: string | symbol, desc: any) => {
     const method = desc.value as Function;
 
